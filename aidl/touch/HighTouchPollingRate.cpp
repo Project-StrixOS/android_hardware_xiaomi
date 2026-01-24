@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#define LOG_TAG "vendor.lineage.touch-service.xiaomi"
+#define LOG_TAG "vendor.strix.touch-service.xiaomi"
 
 #include "HighTouchPollingRate.h"
 
@@ -17,7 +17,7 @@ using ::android::base::WriteStringToFile;
 
 namespace aidl {
 namespace vendor {
-namespace lineage {
+namespace strix {
 namespace touch {
 
 ndk::ScopedAStatus HighTouchPollingRate::getEnabled(bool* _aidl_return) {
@@ -41,6 +41,6 @@ ndk::ScopedAStatus HighTouchPollingRate::setEnabled(bool enabled) {
 }
 
 }  // namespace touch
-}  // namespace lineage
+}  // namespace strix
 }  // namespace vendor
 }  // namespace aidl

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#define LOG_TAG "vendor.lineage.touch-service.xiaomi"
+#define LOG_TAG "vendor.strix.touch-service.xiaomi"
 
 #include "HighTouchPollingRate.h"
 #include "KeyDisabler.h"
@@ -13,9 +13,9 @@
 #include <android/binder_manager.h>
 #include <android/binder_process.h>
 
-using aidl::vendor::lineage::touch::HighTouchPollingRate;
-using aidl::vendor::lineage::touch::KeyDisabler;
-using aidl::vendor::lineage::touch::KeySwapper;
+using aidl::vendor::strix::touch::HighTouchPollingRate;
+using aidl::vendor::strix::touch::KeyDisabler;
+using aidl::vendor::strix::touch::KeySwapper;
 
 int main() {
     binder_status_t status = STATUS_OK;

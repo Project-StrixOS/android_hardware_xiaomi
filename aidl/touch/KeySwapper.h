@@ -5,11 +5,11 @@
 
 #pragma once
 
-#include <aidl/vendor/lineage/touch/BnKeySwapper.h>
+#include <aidl/vendor/strix/touch/BnKeySwapper.h>
 
 namespace aidl {
 namespace vendor {
-namespace lineage {
+namespace strix {
 namespace touch {
 
 class KeySwapper : public BnKeySwapper {
@@ -19,6 +19,6 @@ class KeySwapper : public BnKeySwapper {
 };
 
 }  // namespace touch
-}  // namespace lineage
+}  // namespace strix
 }  // namespace vendor
 }  // namespace aidl

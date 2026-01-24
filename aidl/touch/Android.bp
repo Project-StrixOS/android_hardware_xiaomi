@@ -4,16 +4,16 @@
 //
 
 cc_binary {
-    name: "vendor.lineage.touch-service.xiaomi",
-    init_rc: ["vendor.lineage.touch-service.xiaomi.rc"],
+    name: "vendor.strix.touch-service.xiaomi",
+    init_rc: ["vendor.strix.touch-service.xiaomi.rc"],
     vintf_fragments: select(soong_config_variable("XIAOMI_TOUCH", "HIGH_TOUCH_POLLING_PATH"), {
-        any: ["vendor.lineage.touch-service.xiaomi-htpr.xml"],
+        any: ["vendor.strix.touch-service.xiaomi-htpr.xml"],
         default: [],
     }) + select(soong_config_variable("XIAOMI_TOUCH", "KEY_DISABLER_CONTROL_PATH"), {
-        any: ["vendor.lineage.touch-service.xiaomi-kd.xml"],
+        any: ["vendor.strix.touch-service.xiaomi-kd.xml"],
         default: [],
     }) + select(soong_config_variable("XIAOMI_TOUCH", "KEY_SWAPPER_CONTROL_PATH"), {
-        any: ["vendor.lineage.touch-service.xiaomi-ks.xml"],
+        any: ["vendor.strix.touch-service.xiaomi-ks.xml"],
         default: [],
     }),
     relative_install_path: "hw",
@@ -43,6 +43,6 @@ cc_binary {
         "libbinder_ndk",
         "liblog",
         "libutils",
-        "vendor.lineage.touch-V1-ndk",
+        "vendor.strix.touch-V1-ndk",
     ],
 }

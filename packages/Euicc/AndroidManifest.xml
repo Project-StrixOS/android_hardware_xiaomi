@@ -4,7 +4,7 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="org.lineageos.euicc.overlay.xiaomi">
-    <overlay android:targetPackage="org.lineageos.euicc"
+          package="org.strixos.euicc.overlay.xiaomi">
+    <overlay android:targetPackage="org.strixos.euicc"
              android:isStatic="true" />
 </manifest>
