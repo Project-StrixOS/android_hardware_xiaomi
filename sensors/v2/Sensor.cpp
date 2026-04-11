@@ -70,7 +70,7 @@ Sensor::Sensor(int32_t sensorHandle, ISensorsEventCallback* callback)
       mCallback(callback),
       mMode(OperationMode::NORMAL) {
     mSensorInfo.sensorHandle = sensorHandle;
-    mSensorInfo.vendor = "The LineageOS Project";
+    mSensorInfo.vendor = "Xiaomi Sensor";
     mSensorInfo.version = 1;
     constexpr float kDefaultMaxDelayUs = 1000 * 1000;
     mSensorInfo.maxDelay = kDefaultMaxDelayUs;

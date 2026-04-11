@@ -24,7 +24,7 @@ static const char* udfps_state_paths[] = {
 
 static struct sensor_t udfps_sensor = {
         .name = "UDFPS Sensor",
-        .vendor = "The LineageOS Project",
+        .vendor = "UDFPS Sensor",
         .version = 1,
         .handle = 0,
         .type = SENSOR_TYPE_DEVICE_PRIVATE_BASE + 1,
