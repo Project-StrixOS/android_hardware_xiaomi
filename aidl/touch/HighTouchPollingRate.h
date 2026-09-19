@@ -5,11 +5,11 @@
 
 #pragma once
 
-#include <aidl/vendor/lineage/touch/BnHighTouchPollingRate.h>
+#include <aidl/vendor/strix/touch/BnHighTouchPollingRate.h>
 
 namespace aidl {
 namespace vendor {
-namespace lineage {
+namespace strix {
 namespace touch {
 
 class HighTouchPollingRate : public BnHighTouchPollingRate {
@@ -19,6 +19,6 @@ class HighTouchPollingRate : public BnHighTouchPollingRate {
 };
 
 }  // namespace touch
-}  // namespace lineage
+}  // namespace strix
 }  // namespace vendor
 }  // namespace aidl

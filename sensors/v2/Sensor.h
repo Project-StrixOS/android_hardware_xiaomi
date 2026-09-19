@@ -129,7 +129,7 @@ class DoubleTapSensor : public SysfsPollingOneShotSensor {
         : SysfsPollingOneShotSensor(
                   sensorHandle, callback, "/sys/class/touch/touch_dev/gesture_double_tap_state",
                   "/sys/class/touch/touch_dev/gesture_double_tap_enabled", "Double Tap Sensor",
-                  "org.lineageos.sensor.double_tap",
+                  "org.strixos.sensor.double_tap",
                   static_cast<SensorType>(static_cast<int32_t>(SensorType::DEVICE_PRIVATE_BASE) +
                                           1)) {}
 };
@@ -140,7 +140,7 @@ class SingleTapSensor : public SysfsPollingOneShotSensor {
         : SysfsPollingOneShotSensor(
                   sensorHandle, callback, "/sys/class/touch/touch_dev/gesture_single_tap_state",
                   "/sys/class/touch/touch_dev/gesture_single_tap_enabled", "Single Tap Sensor",
-                  "org.lineageos.sensor.single_tap",
+                  "org.strixos.sensor.single_tap",
                   static_cast<SensorType>(static_cast<int32_t>(SensorType::DEVICE_PRIVATE_BASE) +
                                           2)) {}
 };
@@ -151,7 +151,7 @@ class UdfpsSensor : public SysfsPollingOneShotSensor {
         : SysfsPollingOneShotSensor(
                   sensorHandle, callback, "/sys/class/touch/touch_dev/fod_press_status",
                   "/sys/class/touch/touch_dev/fod_longpress_gesture_enabled", "UDFPS Sensor",
-                  "org.lineageos.sensor.udfps",
+                  "org.strixos.sensor.udfps",
                   static_cast<SensorType>(static_cast<int32_t>(SensorType::DEVICE_PRIVATE_BASE) +
                                           3)) {}
     virtual void fillEventData(Event& event);

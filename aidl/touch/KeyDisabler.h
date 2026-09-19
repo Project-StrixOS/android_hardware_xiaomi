@@ -5,11 +5,11 @@
 
 #pragma once
 
-#include <aidl/vendor/lineage/touch/BnKeyDisabler.h>
+#include <aidl/vendor/strix/touch/BnKeyDisabler.h>
 
 namespace aidl {
 namespace vendor {
-namespace lineage {
+namespace strix {
 namespace touch {
 
 class KeyDisabler : public BnKeyDisabler {
@@ -19,6 +19,6 @@ class KeyDisabler : public BnKeyDisabler {
 };
 
 }  // namespace touch
-}  // namespace lineage
+}  // namespace strix
 }  // namespace vendor
 }  // namespace aidl
