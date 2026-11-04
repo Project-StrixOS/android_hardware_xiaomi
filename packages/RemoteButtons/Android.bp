@@ -23,11 +23,16 @@ android_app {
         "androidx.slice_slice-core",
         "kotlinx-coroutines-android",
     ],
+
+     aaptflags: [
+        "--rename-manifest-package", "org.strixos.remotebuttons",
+    ],
 }
 
 prebuilt_etc {
     name: "default-permissions_org.lineageos.remotebuttons.xml",
     src: "default-permissions_org.lineageos.remotebuttons.xml",
+    filename: "dp_org.strixos.remotebuttons.xml",
     sub_dir: "default-permissions",
     product_specific: true,
 }

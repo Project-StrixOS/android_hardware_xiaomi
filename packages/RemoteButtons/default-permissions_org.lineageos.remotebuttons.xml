@@ -5,7 +5,7 @@
 -->
 <exceptions>
     <!-- Programs the remote over Bluetooth; granted so users aren't asked on first launch -->
-    <exception package="org.lineageos.remotebuttons">
+    <exception package="org.strixos.remotebuttons">
         <permission name="android.permission.BLUETOOTH_CONNECT" fixed="false" />
     </exception>
 </exceptions>
