@@ -5,7 +5,7 @@
 -->
 <exceptions>
     <!-- Streams the microphone of paired remotes; runs in the background without UI -->
-    <exception package="org.lineageos.remotevoice">
+    <exception package="com.android.remotevoice">
         <permission name="android.permission.BLUETOOTH_CONNECT" fixed="false" />
     </exception>
 </exceptions>

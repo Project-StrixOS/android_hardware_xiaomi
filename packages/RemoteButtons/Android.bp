@@ -12,7 +12,7 @@ android_app {
     sdk_version: "system_current",
     product_specific: true,
     privileged: true,
-    privapp_allowlist: "privapp_allowlist_org.lineageos.remotebuttons.xml",
+    privapp_allowlist: "privapp_allowlist_com.android.remotebuttons.xml",
     asset_dirs: ["assets"],
     required: ["default-permissions_org.lineageos.remotebuttons.xml"],
     static_libs: [
@@ -27,14 +27,14 @@ android_app {
     ],
 
      aaptflags: [
-        "--rename-manifest-package", "org.strixos.remotebuttons",
+        "--rename-manifest-package", "com.android.remotebuttons",
     ],
 }
 
 prebuilt_etc {
     name: "default-permissions_org.lineageos.remotebuttons.xml",
     src: "default-permissions_org.lineageos.remotebuttons.xml",
-    filename: "dp_org.strixos.remotebuttons.xml",
+    filename: "default-permissions_com.android.remotebuttons.xml",
     sub_dir: "default-permissions",
     product_specific: true,
 }

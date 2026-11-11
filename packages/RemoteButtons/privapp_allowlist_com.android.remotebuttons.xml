@@ -4,7 +4,7 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <permissions>
-    <privapp-permissions package="org.lineageos.remotebuttons">
+    <privapp-permissions package="com.android.remotebuttons">
         <permission name="android.permission.MODIFY_AUDIO_SETTINGS_PRIVILEGED" />
     </privapp-permissions>
 </permissions>

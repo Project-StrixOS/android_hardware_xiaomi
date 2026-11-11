@@ -12,13 +12,18 @@ android_app {
     sdk_version: "system_current",
     product_specific: true,
     privileged: true,
-    privapp_allowlist: "privapp_allowlist_org.lineageos.remotevoice.xml",
+    privapp_allowlist: "privapp_allowlist_com.android.remotevoice.xml",
     required: ["default-permissions_org.lineageos.remotevoice.xml"],
+
+    aaptflags: [
+        "--rename-manifest-package", "com.android.remotevoice",
+    ],
 }
 
 prebuilt_etc {
     name: "default-permissions_org.lineageos.remotevoice.xml",
     src: "default-permissions_org.lineageos.remotevoice.xml",
+    filename: "default-permissions_com.android.remotevoice.xml",
     sub_dir: "default-permissions",
     product_specific: true,
 }
